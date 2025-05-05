@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Hero Section */}
       <motion.section
         className="bg-purple-700 text-white py-20 text-center"
         initial={{ opacity: 0, y: -50 }}
@@ -18,7 +17,6 @@ const About = () => {
         </p>
       </motion.section>
 
-      {/* Mission Section */}
       <motion.section
         className="py-16 px-4 max-w-6xl mx-auto"
         initial={{ opacity: 0 }}
@@ -33,7 +31,6 @@ const About = () => {
         </p>
       </motion.section>
 
-      {/* Values Cards */}
       <motion.section
         className="py-16 bg-white"
         initial={{ opacity: 0 }}
@@ -68,7 +65,6 @@ const About = () => {
         </div>
       </motion.section>
 
-      {/* CTA Section */}
       <motion.section
         className="py-20 bg-purple-700 text-white text-center"
         initial={{ opacity: 0, y: 50 }}

@@ -5,7 +5,6 @@ import img1 from "../assets/Copy+of+Digital+marketing+flyer.jpg";
 import { motion } from "framer-motion";
 import PageWrapper from "../components/PageWrapper";
 
-// Animation variants
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
@@ -19,7 +18,6 @@ const Home = () => {
   return (
     <PageWrapper>
     <motion.div initial="hidden" animate="visible" className="bg-gray-50 cur">
-      {/* Hero Section */}
       <motion.section
         variants={fadeUp}
         custom={0}
@@ -57,7 +55,6 @@ const Home = () => {
         </div>
       </motion.section>
 
-      {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="w-full px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-purple-700 mb-10">
@@ -94,7 +91,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Courses Section */}
       <section className="bg-gradient-to-r from-purple-700 to-blue-600 text-white py-24">
         <div className="w-full px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-10">Our Popular Courses</h2>
@@ -133,7 +129,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* You can continue wrapping Testimonials, CTA, and Footer similarly if needed */}
     </motion.div>
     </PageWrapper>
   );

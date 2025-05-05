@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="bg-purple-700 text-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo + Links */}
+          
           <div className="flex items-center space-x-4">
             <Link to="/" className="text-2xl font-bold tracking-wide hover:text-purple-300 transition">
               Deaf E-Learning
@@ -31,7 +31,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Desktop Auth Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             {user ? (
               <>
@@ -56,7 +55,7 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Mobile Toggle Button */}
+        
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
               <svg
@@ -76,7 +75,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with Animation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
